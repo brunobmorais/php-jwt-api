@@ -1,5 +1,5 @@
 {
-    "name": "bmorais/jwt-token",
+    "name": "brunomoraisti/jwt-token",
     "description": "Generation and control of jwt token",
     "type": "library",
     "require": {
@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BMorais\\": "src"
+            "BrunoMoraisTI\\": "src"
         }
     },
     "authors": [
