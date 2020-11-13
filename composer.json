@@ -1,5 +1,5 @@
 {
-    "name": "BMorais/jwt-token",
+    "name": "bmorais/jwt-token",
     "description": "Generation and control of jwt token",
     "type": "library",
     "require": {
