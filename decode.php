@@ -1,10 +1,18 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use BMorais\JwtToken;
+use BrunoMoraisTI\JwtToken;
 
-$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOm51bGwsInN1YiI6ImEzNzBkNzk5ZWUxYmVmODNjYTE1NDdhYmFjMWRlZDljMGU4MTdkMzQiLCJqdGkiOiJjOTRlZTkzZWQzYmU0OTQ2MjZjNTcyMDZkM2RjMGY1MTJjZWQyMzY3IiwiaWF0IjoxNjA1Mjc5ODYwLCJleHAiOjE2MDUyODM4NjAsImRhdGEiOnsianNvbiI6bnVsbH19.fcaTEocUnMSo07zeA_D3U0FgiaPEfzoFCI3tB5E-jjw";
+// Instancia Objeto
+$jwtToken = new JwtToken("12345","localhost");
 
-$jwtToken = new JwtToken();
+// Pega o Bearer Token
+$token = $jwtToken->getBearerToken();
 
-var_dump($jwtToken->decode($token));
+// Verifica se o token confere com a chave e se está com a data válida
+$objToken = $jwtToken->decode($token);
+if ($objToken){
+    var_dump($objToken);
+} else {
+    echo "Token invalido";
+}
