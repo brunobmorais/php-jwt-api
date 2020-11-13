@@ -4,7 +4,6 @@
     "type": "library",
     "require": {
         "firebase/php-jwt": "^5.2",
-        "ext-apache": "*"
     },
     "require-dev": {
         "firebase/php-jwt": "^5.2"
