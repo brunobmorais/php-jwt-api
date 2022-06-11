@@ -1,6 +1,6 @@
 <?php
 
-namespace BrunoMoraisTI;
+namespace BMorais\JWT;
 
 use Firebase\JWT\JWT;
 
